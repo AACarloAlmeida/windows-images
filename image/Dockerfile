@@ -1,8 +1,6 @@
 FROM centos:centos7
 RUN yum clean all && yum install -y \
-    xvfb \
-    x11-utils \
-    x11vnc    \
+    xorg-x11-server-Xvfb \
     qemu-kvm
 COPY hdd.img /
 COPY snapshot.img /
