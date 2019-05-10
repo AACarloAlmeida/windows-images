@@ -1,6 +1,6 @@
 FROM centos:centos7
 RUN yum clean all && yum install -y \
-    xvfb
+    xvfb \
     x11-utils \
     x11vnc    \
     qemu-kvm
